@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 8%;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+nav ul li{
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+}
+
+nav ul li a:hover{
+  color:rgb(255, 32, 34) ;
+}
+
+.icons{
+  display: flex;
+  gap: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.icons i:hover{
+  color: rgb(255, 32, 34);
+}
+
+/* about-part-css */
+
+.first-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 18%;
+  background-color: rgb(240, 240, 242);
+}
+
+.watch-img {
+  order: 2; /* Şəkli sağa aparmaq üçün */
+}
+
+.watch-img img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.container h1 {
+  font-size: 5.2rem;
+  margin-bottom: 8%;
+  /* word-spacing: 10%; */
+}
+
+.container p {
+  font-size: 1.2rem;
+  margin-bottom: 8%;
+}
+
+.shop {
+  padding: 3% 4%;
+  font-size: 1rem;
+  background-color: rgb(74, 74, 75);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.shop:hover {
+  background-color: rgb(255, 32, 34);
+}
+
+#new-arrivals h2{
+  font-size: 5rem;
+  margin-bottom: 4%;
+  text-align: left;
+  margin-left: 12%;
+}
+
+#new-arrivals{
+  text-align: center;
+  padding: 10% 10%;
+}
+
+.card-area{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.card{
+  width: 400px;
+}
+

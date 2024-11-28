@@ -1,0 +1,133 @@
+/* video-watch */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.video-main{
+    width:100%;
+    position:relative;
+}
+.video-parag{
+    padding:0 40px;
+    position:absolute;
+    bottom:5px;
+    left:0;
+    color:white;
+    background-color: #FC1E20;
+    width:500px;
+    height:150px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: larger;
+    font-family: Josefin Sans;
+}
+.video-image{
+    width:100%;
+}
+/* info-card */
+#watch-info{
+    margin-top:10rem;
+}
+.info-cards{
+    display:flex;
+    flex-direction: column;
+    gap:6rem;
+}
+.info-card{
+    display:flex;
+    gap:7rem;
+}
+.first-section{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:4rem;
+}
+.first-section h1{
+    font-size: 3.7rem;
+}
+.first-section p{
+    font-size: 1.6rem;
+    color:black;
+    opacity: 0.6;
+}
+.second-section{
+    width:50%;
+}
+.second-section img{
+    width:100%;
+}
+.btn-main {
+    cursor:pointer;
+    display: inline-block;
+    padding: 1.5rem 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #FC1E20;
+      z-index: -2;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: #4A4A4B;
+      transition: all .3s;
+      z-index: -1;
+    }
+    &:hover {
+      color: #fff;
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+
+/* footer-red */
+#footer-red{
+    margin-top:9rem;
+}
+.footer-red-card{
+    background-color: #EA0000;
+    padding:2rem;
+}
+.first-card{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:1rem;   
+    padding:2rem;
+}
+.first-card i{
+    font-size: 3rem;
+    color:white;
+}   
+.first-card h4{
+    font-size: 1.5rem;
+    color:white;
+}
+.first-card p{
+    width:70%;
+    color:white;
+    font-size: 1.2rem;
+}
