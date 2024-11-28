@@ -49,11 +49,6 @@ nav ul li a:hover{
   background-color: rgb(240, 240, 242);
 }
 
-.container {
-  max-width: 600px;
-  order: 1; /* Məzmunu sola gətirmək üçün */
-}
-
 .watch-img {
   order: 2; /* Şəkli sağa aparmaq üçün */
 }
