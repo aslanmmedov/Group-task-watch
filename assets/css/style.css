@@ -1,7 +1,4 @@
 .fev-img{
-
-
-=======
     margin: 150px;
 
     text-align: center;
@@ -40,8 +37,7 @@
 }
 
 .img-under-text:hover .inder-img {
-  opacity: 1;
-=======
+  opacity: 1;}
 .inder-img{
     background-color: red;
     color: white;
@@ -53,8 +49,6 @@
 .img-under-text:hover .inder-img{
     height: 100%;
     z-index: -1;
-}
-.inder-img:hover{
 }
 
 .esil-h2{
@@ -203,5 +197,4 @@
   opacity: 0;
 
 }
-=======
-  }
+
