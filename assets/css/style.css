@@ -1,5 +1,9 @@
 .fev-img{
+
+
+=======
     margin: 150px;
+
     text-align: center;
 
 }
@@ -16,6 +20,28 @@
 .card{
     transition: all 0.6s;
 }
+
+.img-under-text {
+  position: relative;
+}
+
+.inder-img {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  color: #fff;
+  font-size: 14px;
+  padding: 20px 30px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.img-under-text:hover .inder-img {
+  opacity: 1;
+=======
 .inder-img{
     background-color: red;
     color: white;
@@ -74,4 +100,108 @@
         width: 100%;
       }
     }
+
+  }
+  .img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  border-bottom: 2px solid transparent;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.img-container:hover img {
+
+  border-color: red;
+}
+.card h3{
+  margin-top: 10px;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Стили для изображений */
+.image-container .img-first {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+/* Сердечко */
+.icon-heart {
+ opacity: 0;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 2rem;
+  color: #666;
+  background: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  transition: transform 0.6s ease, color 0.3s ease;
+  cursor: pointer;
+}
+.underline{
+  background-color: red;
+  height: 6px;
+}
+.icon-heart:hover {
+  color: red;
+  transform: scale(1.2);
+  transition: all 0.6s;
+}
+
+/* Кнопка Add to cart */
+.add-to-cart {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: red;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 25px;
+  font-weight: bold;
+  font-size: 14px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+.card:hover .icon-heart, .card:hover .add-to-cart {
+  opacity: 1;
+  transform: translateY(0);
+}
+.card:hover .underline{
+  opacity: 0;
+
+}
+=======
   }
