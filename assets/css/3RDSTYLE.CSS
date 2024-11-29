@@ -32,17 +32,16 @@
 #watch-info{
     margin-top:10rem;
 }
-.info-cards{
+/* .info-cards{
     display:flex;
     flex-direction: column;
     gap:6rem;
-}
-.info-card{
+} */
+/* .info-card{
     display:flex;
     gap:7rem;
-}
+} */
 .first-section{
-    width:50%;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -55,9 +54,6 @@
     font-size: 1.6rem;
     color:black;
     opacity: 0.6;
-}
-.second-section{
-    width:50%;
 }
 .second-section img{
     width:100%;
@@ -130,4 +126,58 @@
     width:70%;
     color:white;
     font-size: 1.2rem;
+}
+
+/* footer end */
+
+.about-us{
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.about-us h4{
+    font-size: larger;
+}
+.about-us p{
+    color:#7b7b80;
+}
+.about-us ul li{
+    color:#7b7b80;
+}
+.about-us ul{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.about-us .h4-footer{
+    font-size: 2.4rem;
+}
+.h4-footer span{
+    color:#FF2021;
+}
+.parag{
+    margin-top:3rem;
+}
+.parag p{
+    color:#7b7b80
+}
+.parag a{
+    color:#EA0000
+}
+.footer-sect{
+    margin-top:6rem;
+}
+.icns{
+    margin-top:3rem;
+    width:40%;
+    margin-left:8rem;
+}
+.icns ul{
+    display:flex;
+    align-items: flex-end;
+    gap:2rem;
+
+}
+.icns ul li{
+    color:black;
 }
