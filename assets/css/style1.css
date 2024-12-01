@@ -9,9 +9,10 @@
 }
 
 nav{
+  width:100%;
   display: flex;
   justify-content: space-between;
-  padding: 3.5% 8%;
+  padding: 3.5% 2%;
 }
 
 nav ul{
@@ -45,6 +46,9 @@ sup.hot {
   margin-left: 5px;
 }
 
+.nav-menu{
+  display:none;
+}
 .icons{
   display: flex;
   gap: 30px;
@@ -81,7 +85,7 @@ sup.hot {
   color: #0b1c39;
 }
 
-.container p {
+.container .watch-p {
   font-size: 1.2rem;
   margin-bottom: 8%;
   color: #212025;
@@ -105,6 +109,7 @@ sup.hot {
 
 #new-arrivals h2{
   font-size: 5rem;
+  margin-top:2rem;
   margin-bottom: 4%;
   text-align: left;
   margin-left: 8%;
@@ -118,6 +123,9 @@ sup.hot {
   color: #444444;
 }
 
+.card-body img{
+  width:100%;
+}
 .card-body p{
   font-size: 1.1rem;
   font-weight: 500;
@@ -126,7 +134,7 @@ sup.hot {
 
 #new-arrivals{
   text-align: center;
-  padding: 10% 10%;
+  /* padding: 2rem 1rem; */
 }
 
 .card-area{
@@ -136,9 +144,7 @@ sup.hot {
   text-align: center;
   width: 100%;
 }
-.card{
-  width: 400px;
-}
+
 
 .btn-main {
   cursor:pointer;
