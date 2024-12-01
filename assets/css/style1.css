@@ -12,13 +12,19 @@ nav{
   width:100%;
   display: flex;
   justify-content: space-between;
-  padding: 3.5% 2%;
+  padding: 3.3% 2%;
+  background-color: white;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  /* position: fixed;
+  z-index: 9999; */
 }
 
 nav ul{
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 7%;
 }
 nav ul li a{
   font-size: 1rem;
@@ -46,9 +52,54 @@ sup.hot {
   margin-left: 5px;
 }
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none; 
+  position: absolute;
+  top: 150%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-top: 3px solid rgb(255, 32, 34);
+  text-align: left;
+  border-radius: 5px;
+  padding: 1rem;
+  z-index: 10;
+  min-width: 150px;
+}
+
+.dropdown-menu a {
+  display: block;
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  color: rgb(255, 32, 34);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; 
+}
+
 .nav-menu{
   display:none;
 }
+
+@media only screen and (max-width: 767px) {
+  .nav-menu {
+    display: block;
+    cursor: pointer; 
+    padding: 1rem; 
+    font-size: 1.5rem; 
+  }
+}
+
 .icons{
   display: flex;
   gap: 30px;
@@ -63,54 +114,56 @@ sup.hot {
 /* about-part-css */
 
 .first-sec {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 18%;
+  padding: 25.3% 15%;
   background-color: rgb(240, 240, 242);
+  position: relative;
+  overflow: hidden;
 }
+
 
 .watch-img {
-  order: 2; 
+  position: absolute;
+  right: 5%;
+  top: 0.1%;
+  display: block;
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1); 
+  }
+  50% {
+    transform: scale(1.03); 
+  }
+  100% {
+    transform: scale(1); 
+  }
 }
 
-.watch-img img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-}
+
+
 .first-sec .container h1 {
   font-size: 4.8rem;
-  margin: 10% 0;
+  margin: 5% 0;
   color: #0b1c39;
 }
 
 .container .watch-p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 8%;
   color: #212025;
 }
 
 
-/* .shop {
-  padding: 3% 4%;
-  font-size: 1rem;
-  background-color: rgb(74, 74, 75);
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  margin-bottom: 8%;
-  transition: 0.3s;
-}
-
-.shop:hover {
-  background-color: rgb(255, 32, 34);
-} */
-
 #new-arrivals h2{
-  font-size: 5rem;
-  margin-top:2rem;
-  margin-bottom: 4%;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
   text-align: left;
   margin-left: 8%;
   color: #000;
@@ -147,6 +200,7 @@ sup.hot {
 
 
 .btn-main {
+  margin-bottom: 2%;
   cursor:pointer;
   display: inline-block;
   padding: 1.5rem 1.5rem;
